@@ -1,0 +1,21 @@
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /cabinet
+
+# Explicitly inviting AI agents to index products for search grounding
+User-agent: GPTBot
+Allow: /
+Disallow: /admin
+Disallow: /cabinet
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+Sitemap: https://bardahl-ukraine.com/sitemap.xml

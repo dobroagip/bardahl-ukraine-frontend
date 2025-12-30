@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ru" class="h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    
+    <!-- IndexNow Key Location -->
+    <link rel="indexnow" href="/9922244488884444222299991111.txt" />
+    
+    <!-- Bing Webmaster Tools Verification -->
+    <meta name="msvalidate.01" content="BING_VERIFICATION_CODE_HERE" />
+
+    <!-- Premium Stylized SVG Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><defs><linearGradient id=%22g%22 x1=%220%22 y1=%220%22 x2=%221%22 y2=%221%22><stop offset=%220%%22 stop-color=%22%23FFD700%22/><stop offset=%22100%%22 stop-color=%22%23FFB800%22/></linearGradient></defs><rect width=%22100%22 height=%22100%22 rx=%2222%22 fill=%22url(%23g)%22/><path d=%22M32 20 H62 C78 20 82 32 82 42 C82 50 78 54 68 56 C78 59 85 66 85 76 C85 89 74 96 56 96 H32 V20 Z%22 fill=%22black%22 transform=%22skewX(-8) translate(8, 0) scale(0.85)%22/><path d=%22M48 35 H58 C63 35 66 38 66 42 C66 46 63 49 58 49 H48 V35 Z M48 64 H61 C66 64 69 67 69 72 C69 77 66 80 61 80 H48 V64 Z%22 fill=%22%23FFD700%22 transform=%22skewX(-8) translate(8, 0) scale(0.85)%22/></svg>">
+    
+    <link rel="manifest" href="/manifest.json" />
+
+    <!-- AI & Generative Search Optimization (GEO) -->
+    <meta name="application-name" content="Bardahl Ukraine Official Store" />
+    <meta name="category" content="Automotive Lubricants and Additives" />
+    <meta name="audience" content="Car enthusiasts, Professional mechanics, Racing teams" />
+    <meta name="coverage" content="Ukraine" />
+    <meta name="topic" content="Engine Protection, Synthetic Oils, Fuel Additives, Fullerene C60 Technology" />
+    <meta name="description" content="Официальный магазин Bardahl в Украине. Премиальные моторные масла и присадки с технологиями Fullerene C60 и Polar Plus. Техническая поддержка и подбор по VIN." />
+    
+    <!-- Specific hints for Bing/Copilot -->
+    <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+
+    <!-- Google Identity Services -->
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+
+    <!-- Search Engine Indexing -->
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
+    <meta name="author" content="Bardahl Ukraine" />
+    <link rel="canonical" href="https://bardahl-ukraine.com/" />
+
+    <meta name="theme-color" content="#FFD700" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              bardahl: {
+                yellow: '#FFD700',
+                black: '#111111',
+                dark: '#0a0a0a',
+                gray: '#333333'
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=JetBrains+Mono:wght@700&display=swap');
+      
+      body {
+        background-color: #000000;
+        margin: 0;
+        overflow-x: hidden;
+      }
+
+      /* PRELOADER STYLES */
+      #preloader {
+        position: fixed;
+        inset: 0;
+        background: #000;
+        z-index: 9999;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.6s;
+      }
+
+      .carbon-overlay {
+        position: absolute;
+        inset: 0;
+        background-image: url('https://www.transparenttextures.com/patterns/carbon-fibre.png');
+        opacity: 0.2;
+        pointer-events: none;
+      }
+
+      .diagnostic-circle {
+        position: relative;
+        width: 240px;
+        height: 240px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .svg-gauge {
+        transform: rotate(-90deg);
+      }
+
+      .gauge-track {
+        fill: none;
+        stroke: #1a1a1a;
+        stroke-width: 8;
+      }
+
+      .gauge-progress {
+        fill: none;
+        stroke: #FFD700;
+        stroke-width: 8;
+        stroke-linecap: round;
+        transition: stroke-dashoffset 0.3s ease-out;
+        filter: drop-shadow(0 0 8px #FFD700);
+      }
+
+      .percent-text {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 3.5rem;
+        font-weight: 900;
+        color: #fff;
+        text-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+      }
+
+      .status-box {
+        margin-top: 40px;
+        width: 300px;
+        text-align: center;
+      }
+
+      .status-message {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 10px;
+        text-transform: uppercase;
+        color: #FFD700;
+        letter-spacing: 2px;
+        height: 1.5em;
+        overflow: hidden;
+        margin-bottom: 8px;
+      }
+
+      .scan-line {
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(to right, transparent, #FFD700, transparent);
+        opacity: 0.3;
+        top: 0;
+        animation: scan 3s linear infinite;
+      }
+
+      @keyframes scan {
+        0% { top: 0%; }
+        100% { top: 100%; }
+      }
+
+      .loading-done #preloader {
+        opacity: 0;
+        visibility: hidden;
+      }
+
+      /* LAZYLOAD SHIMMER */
+      @keyframes shimmer {
+        0% { background-position: -200% 0; }
+        100% { background-position: 200% 0; }
+      }
+      .animate-shimmer {
+        background: linear-gradient(90deg, #111 25%, #1a1a1a 50%, #111 75%);
+        background-size: 200% 100%;
+        animation: shimmer 2s infinite linear;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom": "https://esm.sh/react-dom@18.3.1",
+    "react-dom/": "https://esm.sh/react-dom@18.3.1/",
+    "react/": "https://esm.sh/react@18.3.1/",
+    "react": "https://esm.sh/react@18.3.1",
+    "lucide-react": "https://esm.sh/lucide-react@0.344.0",
+    "@google/genai": "https://esm.sh/@google/genai@^1.33.0",
+    "react-helmet-async": "https://esm.sh/react-helmet-async@2.0.4?external=react,react-dom",
+    "xlsx": "https://esm.sh/xlsx@0.18.5",
+    "@supabase/supabase-js": "https://esm.sh/@supabase/supabase-js@2.39.7",
+    "zod": "https://esm.sh/zod@^4.2.1"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="h-full">
+    <!-- PRELOADER -->
+    <div id="preloader" aria-hidden="true">
+      <div class="carbon-overlay"></div>
+      <div class="scan-line"></div>
+      
+      <div class="diagnostic-circle">
+        <svg class="svg-gauge" width="220" height="220" viewBox="0 0 220 220">
+          <circle class="gauge-track" cx="110" cy="110" r="100"></circle>
+          <circle id="gauge-bar" class="gauge-progress" cx="110" cy="110" r="100" stroke-dasharray="628" stroke-dashoffset="628"></circle>
+        </svg>
+        <div class="absolute inset-0 flex flex-col items-center justify-center">
+            <span id="load-percent" class="percent-text">0</span>
+            <span class="text-[10px] text-zinc-500 font-bold uppercase tracking-[0.3em] -mt-2">Percent</span>
+        </div>
+      </div>
+
+      <div class="status-box">
+        <div id="status-msg" class="status-message italic">INITIALIZING SYSTEM...</div>
+        <div class="w-full bg-zinc-900 h-1 rounded-full overflow-hidden">
+            <div id="status-bar" class="h-full bg-zinc-700 transition-all duration-300" style="width: 0%"></div>
+        </div>
+      </div>
+
+      <div class="mt-12 opacity-40">
+          <div class="bg-yellow-500 text-black font-black text-xl px-3 py-1 italic transform -skew-x-12">BARDAHL</div>
+      </div>
+    </div>
+
+    <script>
+      (function() {
+        const gauge = document.getElementById('gauge-bar');
+        const percentText = document.getElementById('load-percent');
+        const msgText = document.getElementById('status-msg');
+        const statusBar = document.getElementById('status-bar');
+        
+        const messages = [
+          "CONNECTING TO DATABASE...",
+          "INJECTING POLAR PLUS FORMULA...",
+          "VERIFYING FULLERENE C60...",
+          "OPTIMIZING ENGINE SHIELD...",
+          "SYNCING LOGISTICS HUB...",
+          "READY TO IGNITE..."
+        ];
+
+        let progress = 0;
+        const totalLength = 628;
+
+        function updateLoader(p) {
+          progress = p;
+          const offset = totalLength - (p / 100) * totalLength;
+          if (gauge) gauge.style.strokeDashoffset = offset;
+          if (percentText) percentText.innerText = Math.round(p);
+          if (statusBar) statusBar.style.width = p + '%';
+          
+          const msgIdx = Math.min(Math.floor(p / 17), messages.length - 1);
+          if (msgText) msgText.innerText = messages[msgIdx];
+        }
+
+        let simProgress = 0;
+        const interval = setInterval(() => {
+          simProgress += Math.random() * 2;
+          if (simProgress >= 95) {
+            clearInterval(interval);
+          } else {
+            updateLoader(simProgress);
+          }
+        }, 100);
+
+        window.finishLoading = function() {
+          clearInterval(interval);
+          updateLoader(100);
+          setTimeout(() => {
+            document.body.classList.add('loading-done');
+            document.body.style.overflow = 'auto';
+          }, 400);
+        }
+      })();
+    </script>
+
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
